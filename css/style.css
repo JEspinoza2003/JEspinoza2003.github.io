@@ -10,16 +10,28 @@ body {
     color: #ff8800;
 }
 
-p {
-    font-size: 20px;
+.about {
+    padding: 60px 20px; /* Agrega un margen adaptable */
 }
 
+.about h1 {
+    font-size: 2rem; /* Tamaño adaptable para dispositivos más pequeños */
+}
 
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-img img {
+    max-width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    height: auto;    /* Ajuste automático de la altura */
+}
 
 /*PADRE INDEX*/
 .image-container {
     width: 100%; /* Ancho completo */
-    height: 100vh; /* Altura deseada, ajústala según sea necesario */
+    height: auto; /* Altura deseada, ajústala según sea necesario */
     background-color: black; /* Color de fondo negro */
     display: flex; /* Usar flexbox para centrar la imagen */
     justify-content: center; /* Centrar horizontalmente */
@@ -32,6 +44,26 @@ p {
     max-height: 100%; /* Hacer que la imagen ocupe la altura máxima del contenedor */
     object-fit: contain; /* Mantener las proporciones de la imagen */
 }
+
+.services {
+    padding: 60px 20px;
+}
+
+.section-header h1 {
+    font-size: 2rem;
+}
+
+.card-body p.lead {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
 
 
 /*HIJO INDEX*/
@@ -101,10 +133,6 @@ p {
     color: #000;
 }
 
-.w-100 {
-    height: 100vh;
-}
-
 .navbar-toggler {
     padding: 1px 5px;
     font-size: 18px;
@@ -112,8 +140,6 @@ p {
 }
 
 .card {
-    min-height: 400px; /* MINIMO ALTO */
-    min-width: 785px; /* MINIMO ANCHO */
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 10px;
@@ -131,11 +157,6 @@ p {
     font-size: 50px;
 }
 
-.team-card {
-    width: 80%; /* Ajusta el tamaño del card */
-    max-width: 350px; /* Limita el tamaño máximo */
-}
-
 #equipo img.rounded-circle {
     width: 150px; /* Ajusta el tamaño de la imagen */
     height: 150px; /* Asegura una proporción cuadrada */
@@ -151,115 +172,11 @@ p {
     justify-content: center;
     height: 100%;
 }
- 
-@media(max-width: 1700px){
-    .navbar-nav {
-        text-align: center;
+
+@media(max-width: 765px){
+
+    #servicios .card-body{
+        max-width: 100px;
     }
 
-    .carousel-item {
-        height: 80vh;
-    }
-
-    .image-containers{
-        height: 20vh;
-    }
-}
-
-@media(max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .carousel-item {
-        height: 70vh;
-    }
-
-    .w-100 {
-        height: 70vh;
-    }
-
-    .carousel-caption {
-        bottom: 125px;
-    }
-
-    .carousel-caption h5 {
-        font-size: 17px;
-    }
-
-    .carousel-caption a {
-        padding: 10px 15px;
-        font-size: 15px;
-    }
-
-    .carousel-caption p {
-        width: 100%;
-        line-height: 1.5;
-        font-size: 12px;
-    }
-
-    .about-text {
-        padding-top: 50px;
-    }
-
-    .card {
-        margin-bottom: 30px;
-    }
-
-    .card-H {
-        margin-bottom: 30px;
-    }
-
-    .section-padding {
-        padding: 50px 0;
-    }
-}
-
-/* Media queries para pantallas medianas */
-@media (max-width: 992px) {
-    .image-container {
-        height: 40vh; /* Reducir altura en pantallas medianas */
-    }
-    .carousel-item {
-        height: 40vh;
-    }
-    /* Ajustes adicionales para el carrusel en pantallas pequeñas */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-/* Media queries para pantallas pequeñas */
-@media (max-width: 768px) {
-    .image-container {
-        height: 35vh; /* Reducir aún más la altura */
-    }
-    .carousel-item {
-        height: 35vh;
-    }
-    /* Ajustes adicionales para el carrusel en pantallas pequeñas */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-/* Media queries para pantallas extra pequeñas (móviles) */
-@media (max-width: 576px) {
-    .image-container {
-        height: 30vh; /* Ajustar para móviles */
-    }
-    .carousel-item {
-        height: 30vh;
-    }
-
-    /* Ajustes adicionales para el carrusel en pantallas pequeñas */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 20px;
-        height: 20px;
-    }
 }
