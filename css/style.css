@@ -28,7 +28,7 @@ body {
     height: auto;    /* Ajuste automático de la altura */
 }
 
-#carouselE {
+#carousel001 {
     height: 100vh;
 }
 
@@ -204,7 +204,7 @@ body {
         width: 100%;
         height: auto;
     }
-    #carouselE {
+    #carousel001 {
         height: auto;
     }
     
