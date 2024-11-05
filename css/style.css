@@ -23,6 +23,19 @@ body {
     line-height: 1.6;
 }
 
+
+/* Texto principal */
+#nosotros h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#nosotros p.ps {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
 .about-img img {
     max-width: 100%; /* La imagen ocupará el ancho completo del contenedor */
     height: auto;    /* Ajuste automático de la altura */
@@ -104,8 +117,44 @@ body {
 
 
 .section-padding {
-    padding: 70px ;
+    padding: 60px 15px;
 }
+
+/* Encabezado */
+#servicios .section-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Tarjetas de servicio */
+#servicios .card {
+    border: none;
+}
+
+#servicios .card-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+#servicios p.ps {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Botón de catálogo */
+#servicios .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+/* Carruseles */
+#servicios .carousel-inner img {
+    object-fit: cover;
+    height: 355px;
+    border-radius: 10px;
+}
+
+
 
 .carousel-caption {
     bottom: 200px;
@@ -215,4 +264,68 @@ body {
     .carousel-item {
         height: auto;
     }
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .navbar-nav a {
+        font-size: 18px; /* Aumenta el tamaño del texto en el menú */
+        padding: 10px; /* Aumenta el espacio entre elementos */
+    }
+
+    .navbar-dark .navbar-brand {
+        font-size: 28px; /* Aumenta el tamaño de la marca en pantallas pequeñas */
+    }
+
+    #nav .text, #nav .textB {
+        font-size: 24px; /* Aumenta el tamaño de la marca en pantallas pequeñas */
+    }
+    
+    .navbar-collapse {
+        text-align: center; /* Centra el contenido cuando está expandido en móvil */
+    }
+    
+    /* Opcional: aumenta el tamaño del ícono de colapso */
+    .navbar-toggler {
+        font-size: 22px;
+    }
+
+
+    #nosotros h1 {
+        font-size: 2rem; /* Tamaño del título en pantallas pequeñas */
+    }
+    
+    #nosotros p.ps {
+        font-size: 1rem;
+    }
+
+
+    /* Encabezado */
+    #servicios .section-header h1 {
+        font-size: 2rem;
+    }
+
+    /* Tarjetas de servicio */
+    #servicios .card-title {
+        font-size: 1.3rem;
+    }
+    
+    #servicios p.ps {
+        font-size: 0.9rem;
+    }
+
+    /* Carruseles e imágenes */
+    #servicios .carousel-inner img {
+        height: 300px;
+    }
+
+    /* Ajustes para columnas: apilado en pantallas pequeñas */
+    #servicios .row.mb-4, #servicios .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #servicios .col-md-8, #servicios .col-md-4 {
+        width: 100%;
+    }
+
 }
