@@ -20,7 +20,8 @@
 
         <div class="container">
 
-            <a href="#" class="navbar-brand"><img src="img/ICO_JP.png" alt=""> <span class="text pt-3">Servicios</span> <span class="textB pt-3">Generales</span> </a>
+            <a href="#" class="navbar-brand"><img src="img/ICO_JP.png" alt=""> <span class="text pt-3">Servicios</span>
+                <span class="textB pt-3">Generales</span> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
                 aria-controls="navbarS" aria-expanded="false" aria-label="Toglle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,13 +38,13 @@
                         <a href="#tarrajeos" class="nav-link">tarrajeos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tarrajeos" class="nav-link">enchapados</a>
+                        <a href="#enchapados" class="nav-link">enchapados</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#instalaciones" class="nav-link"> inst.sanitarias</a>
+                        <a href="#iS" class="nav-link"> inst.sanitarias</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#instalaciones" class="nav-link"> inst.electricas</a>
+                        <a href="#iE" class="nav-link"> inst.electricas</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contacto" class="nav-link">contacto</a>
@@ -217,12 +218,12 @@
 
     </section>
 
-    <section id="tarrajeos" class="services section-padding">
+    <section class="services section-padding">
 
         <div class="row pt-3">
-            <div class="col-lg-6 col-md-12 mb-4">
-                <div class="text-white text-center p-4">
-                    <h1>TARREJEOS</h1>
+            <div id="tarrajeos" class="col-lg-6 col-md-12 mb-4 pt-5">
+                <div class="text-white text-center p-4 pt-5">
+                    <h1 class="pt-4">TARREJEOS</h1>
                 </div>
                 <div id="carouselT" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -293,10 +294,10 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-6 col-md-12 mb-4">
-                <div class="text-white text-center p-4">
-                    <h1>ENCHAPADOS</h1>
+
+            <div id="enchapados" class="col-lg-6 col-md-12 mb-4 pt-5">
+                <div class="text-white text-center p-4 pt-5">
+                    <h1 class="pt-4">ENCHAPADOS</h1>
                 </div>
                 <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -371,12 +372,12 @@
 
     </section>
 
-    <section id="instalaciones" class="services section-padding">
+    <section class="services section-padding">
 
-        <div class="row pt-3">
+        <div id="iS" class="row pt-3">
             <div class="col-lg-6 col-md-12 mb-4">
-                <div class="text-white text-center p-4">
-                    <h1>INSTALACIONES SANITARIAS</h1>
+                <div class="text-white text-center p-4 pt-5">
+                    <h1 class="pt-5">INSTALACIONES SANITARIAS</h1>
                 </div>
                 <div id="carouselIS" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -447,10 +448,10 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-6 col-md-12 mb-4">
-                <div class="text-white text-center p-4">
-                    <h1>INSTALACIONES ELECTRICAS</h1>
+
+            <div id="iE" class="col-lg-6 col-md-12 mb-4">
+                <div class="text-white text-center p-4 pt-5">
+                    <h1 class="pt-5">INSTALACIONES ELECTRICAS</h1>
                 </div>
                 <div id="carouselIE" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -597,6 +598,18 @@
         }
     </script>
 
-</body>
+    <script>
+        // Script para cerrar el menú colapsable al hacer clic en un enlace en dispositivos móviles
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
+    </script>
 
+    
+</body>
 </html>
