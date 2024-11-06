@@ -4,6 +4,7 @@
 
 body {
     background: #161815;
+    font-size: 1.2rem; /* Aumenta el tamaño de fuente general */
 }
 
 .text {
@@ -117,13 +118,13 @@ body {
 
 
 .section-padding {
-    padding: 60px 15px;
+    padding: 40px 10px; /* Reduce el padding para que se vea más compacto */
 }
 
-/* Encabezado */
 #servicios .section-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* Tarjetas de servicio */
@@ -132,19 +133,18 @@ body {
 }
 
 #servicios .card-title {
-    font-size: 1.5rem;
-    margin-top: 15px;
+    font-size: 1.8rem; /* Aumenta el tamaño del título */
 }
 
 #servicios p.ps {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.1rem; /* Aumenta el tamaño del párrafo */
+    line-height: 1.8;
 }
 
 /* Botón de catálogo */
 #servicios .btn {
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 1.1rem;
+    padding: 12px 25px;
 }
 
 /* Carruseles */
@@ -296,34 +296,39 @@ body {
     }
     
     #nosotros p.ps {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
 
-    /* Encabezado */
+    /* Texto y títulos más grandes en pantallas pequeñas */
+    body {
+        font-size: 1.4rem;
+    }
+
     #servicios .section-header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
-    /* Tarjetas de servicio */
     #servicios .card-title {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     
     #servicios p.ps {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
-    /* Carruseles e imágenes */
+    /* Carruseles */
     #servicios .carousel-inner img {
         height: 300px;
     }
 
-    /* Ajustes para columnas: apilado en pantallas pequeñas */
+    /* Ajuste de columnas */
     #servicios .row.mb-4, #servicios .row {
         display: flex;
         flex-direction: column-reverse;
+        margin-bottom: 20px;
     }
+
     #servicios .col-md-8, #servicios .col-md-4 {
         width: 100%;
     }
