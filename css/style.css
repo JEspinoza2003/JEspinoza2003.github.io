@@ -267,7 +267,7 @@ body {
 }
 
 /* Estilos específicos para pantallas pequeñas */
-@media (max-width: 767px) {
+@media (max-width: 967px) {
     .navbar-nav a {
         font-size: 18px; /* Aumenta el tamaño del texto en el menú */
         padding: 10px; /* Aumenta el espacio entre elementos */
