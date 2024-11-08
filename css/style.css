@@ -5,6 +5,7 @@
 body {
     background: #161815;
     font-size: 1.2rem; /* Aumenta el tamaño de fuente general */
+    margin-top: 80px;
 }
 
 .text {
@@ -86,7 +87,7 @@ body {
 
 .service-icon {
     width: 100px;
-    height: 100px;
+    height: auto;
     margin-bottom: 15px;
 }
 
@@ -95,7 +96,7 @@ body {
 /*HIJO INDEX*/
 .image-containers {
     width: 100%; /* Ancho completo */
-    height: 47vh; /* Altura deseada, ajústala según sea necesario */
+    height: 45vh; /* Altura deseada, ajústala según sea necesario */
     background-color: black; /* Color de fondo negro */
     display: flex; /* Usar flexbox para centrar la imagen */
     justify-content: center; /* Centrar horizontalmente */
@@ -109,6 +110,25 @@ body {
     object-fit: contain; /* Mantener las proporciones de la imagen */
 }
 
+
+.image-containersS {
+    width: 100%; /* Ancho completo */
+    height: 25vh; /* Altura deseada, ajústala según sea necesario */
+    background-color: black; /* Color de fondo negro */
+    display: flex; /* Usar flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que sobresalga */
+}
+
+.image-containersS img {
+    max-width: 100%; /* Hacer que la imagen ocupe el ancho máximo del contenedor */
+    max-height: 100%; /* Hacer que la imagen ocupe la altura máxima del contenedor */
+    object-fit: contain; /* Mantener las proporciones de la imagen */
+}
+
+
+
 .about-img {
     width: 300px;
     height: auto;
@@ -116,37 +136,35 @@ body {
     margin: 0 auto;/* Margen automático para centrar horizontalmente */
 }
 
+.ico{
+    width: 180px;
+     height: auto;
+}
 
 .section-padding {
     padding: 40px 10px; /* Reduce el padding para que se vea más compacto */
 }
 
 #servicios .section-header h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 /* Tarjetas de servicio */
 #servicios .card {
     border: none;
 }
-
 #servicios .card-title {
     font-size: 1.8rem; /* Aumenta el tamaño del título */
 }
-
 #servicios p.ps {
     font-size: 1.1rem; /* Aumenta el tamaño del párrafo */
     line-height: 1.8;
 }
-
-/* Botón de catálogo */
-#servicios .btn {
+button{
     font-size: 1.1rem;
     padding: 12px 25px;
 }
-
 /* Carruseles */
 #servicios .carousel-inner img {
     object-fit: cover;
@@ -160,14 +178,12 @@ body {
     bottom: 200px;
     z-index: 2;
 }
-
 .carousel-caption h5 {
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
 }
-
 .carousel-caption p {
     width: 60%;
     margin: auto;
@@ -175,19 +191,23 @@ body {
     line-height: 1.9;
 }
 
-#nav img{
+
+.navbar-brand img{
     width: 50px;
     height: auto;
     margin-right: 15px;
     margin-bottom: 10px;
 }
-
+.navbar-brand{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
 .navbar-nav a {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
 }
-
 .navbar-dark .navbar-brand {
     color: #fff;
     font-size: 25px;
@@ -195,12 +215,10 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
 }
-
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
     color: #000;
 }
-
 .navbar-toggler {
     padding: 1px 5px;
     font-size: 18px;
@@ -219,25 +237,27 @@ body {
     height: 100%;
 }
 
+#equipo .section-header h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 #equipo img.rounded-circle {
     width: 150px; /* Ajusta el tamaño de la imagen */
     height: 150px; /* Asegura una proporción cuadrada */
     object-fit: cover;
 }
-
 /* Ajuste de imagen */
 #equipo .team-card img {
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
-
 /* Asegura que el card se extienda en pantallas grandes */
 .team-card {
     max-width: 100%;
     margin: 0 auto;
 }
-
 /* Ajustes adicionales para la imagen y los textos */
 .team-card img {
     width: 150px;
@@ -246,9 +266,7 @@ body {
 }
 
 @media(max-width: 1500px) {
-    body{
-        margin-top: 56px;
-    }
+    
     .image-container{
         width: 100%;
         height: auto;
@@ -267,28 +285,7 @@ body {
 }
 
 /* Estilos específicos para pantallas pequeñas */
-@media (max-width: 967px) {
-    .navbar-nav a {
-        font-size: 18px; /* Aumenta el tamaño del texto en el menú */
-        padding: 10px; /* Aumenta el espacio entre elementos */
-    }
-
-    .navbar-dark .navbar-brand {
-        font-size: 28px; /* Aumenta el tamaño de la marca en pantallas pequeñas */
-    }
-
-    #nav .text, #nav .textB {
-        font-size: 24px; /* Aumenta el tamaño de la marca en pantallas pequeñas */
-    }
-    
-    .navbar-collapse {
-        text-align: center; /* Centra el contenido cuando está expandido en móvil */
-    }
-    
-    /* Opcional: aumenta el tamaño del ícono de colapso */
-    .navbar-toggler {
-        font-size: 22px;
-    }
+@media (max-width: 900px) {
 
 
     #nosotros h1 {
@@ -299,22 +296,53 @@ body {
         font-size: 1.2rem;
     }
 
+    .about-img {
+        width: 195px;
+        height: auto;
+        display: block;/* La imagen es tratada como un bloque */
+        margin: 0 auto;/* Margen automático para centrar horizontalmente */
+    }
 
-    /* Texto y títulos más grandes en pantallas pequeñas */
-    body {
-        font-size: 1.4rem;
+
+
+    .navbar-brand img{
+        width: 40px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .navbar-brand .text, .navbar-brand .textB {
+        font-size: 14px;
+        padding-bottom: 0px;
+        padding-left: 7px;
+    }
+
+    .navbar {
+        padding: 10px; /* Reduce el padding general del navbar */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 5px; /* Reduce aún más el padding de los enlaces en móviles */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Centra el contenido cuando está expandido en móvil */
+    }
+
+
+
+    .service-icon {
+        width: 70px;
+        height: auto;
+        margin-bottom: 15px;
     }
 
     #servicios .section-header h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #servicios .card-title {
         font-size: 1.6rem;
-    }
-    
-    #servicios p.ps {
-        font-size: 1.2rem;
     }
 
     /* Carruseles */
@@ -331,6 +359,39 @@ body {
 
     #servicios .col-md-8, #servicios .col-md-4 {
         width: 100%;
+    }
+    
+    #equipo .section-header h1{
+        font-size: 2rem;
+    }
+
+    .ico{
+        width: 90px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .carrusel{
+        height: 222px;
+    }
+
+
+    .image-containers{
+        height: 29.5vh;
+    }
+
+
+    .footerI{
+        width: 170px;
+        height: auto;
+    }
+
+    footer p, footer h5 {
+        font-size: 1rem; /* Ajusta según lo necesites */
+    }
+
+    footer .lead {
+        font-size: 1rem;
     }
 
 }

@@ -16,7 +16,7 @@
 
 <body>
 
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
         <div class="container">
 
@@ -41,15 +41,6 @@
                         <a href="#pinturas" class="nav-link">pinturas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#escalera" class="nav-link">escaleras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#techo" class="nav-link">techos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#inoxidable" class="nav-link">inoxidable</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#contacto" class="nav-link">contacto</a>
                     </li>
                 </ul>
@@ -61,7 +52,7 @@
     <div class="row" style="margin-top: 170px;">
         <div class="col-md-12">
             <div class="section-header text-center text-white pb-5">
-                <img src="img/repintar.png" style="width: 180px; height: auto;">
+                <img class="ico" src="img/repintar.png" style="width: 180px; height: auto;">
                 <h1 class="mt-4">Pinturas y Acabados Generales</h1>
             </div>
         </div>
@@ -74,7 +65,7 @@
                 <h1>TABIQUERIA</h1>
             </div>
             <div class="col-lg-6 col-md-12 mb-4">
-                <div id="carouselT" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselT" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselT" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -130,12 +121,11 @@
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-title mb-4 product-name">TABIQUERIA DE PAREDES Y TECHOS</h3>
                             <p class="lead mb-5">
-                                Las Puertas Principales Contra placadas son la combinación perfecta entre estilo,
-                                seguridad
-                                y durabilidad. Fabricadas con materiales de alta calidad, estas puertas ofrecen una
-                                resistencia excepcional a impactos y condiciones climáticas, garantizando la protección
-                                de
-                                tu hogar o negocio.
+                                Nuestro servicio de tabiquería de paredes y techos ofrece soluciones rápidas,
+                                funcionales y de alta calidad para dividir y estructurar espacios interiores. Utilizamos
+                                materiales resistentes y ligeros, como drywall y paneles prefabricados, ideales para
+                                crear ambientes personalizados que se adaptan a las necesidades de cada proyecto, desde
+                                oficinas hasta hogares.
                             </p>
                             <button onclick="sendMessage(this)"
                                 style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
@@ -147,7 +137,7 @@
             </div>
 
             <div class="col-lg-6 col-md-12 mb-4">
-                <div id="carouselCL" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselCL" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselCL" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -210,10 +200,11 @@
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-title mb-4 product-name">CIELOS RASOS</h3>
                             <p class="lead mb-5">
-                                ¡Descubre nuestras puertas principales modernas, el toque perfecto para elevar la
-                                fachada de tu hogar! Diseñadas con líneas limpias y elegantes, nuestras puertas combinan
-                                estilo vanguardista con máxima seguridad. Fabricadas con materiales de alta calidad como
-                                madera maciza, acero y cristal templado, cada puerta ofrece durabilidad y sofisticación.
+                                Nuestro servicio de instalación de cielos rasos proporciona un acabado estético y
+                                funcional para cualquier tipo de espacio. Utilizamos materiales de alta calidad, como
+                                paneles de yeso y fibra mineral, que mejoran la acústica, el aislamiento térmico y la
+                                distribución de la iluminación. Los cielos rasos permiten ocultar instalaciones
+                                eléctricas, ductos y otras estructuras, brindando una apariencia limpia y ordenada.
                             </p>
                             <button onclick="sendMessage(this)"
                                 style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
@@ -234,7 +225,7 @@
                 <h1>BALDOSAS</h1>
             </div>
             <div class="col-lg-6 col-md-12 mb-4">
-                <div id="carouselBB" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselBB" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselBB" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -290,10 +281,10 @@
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-title mb-4 product-name">BALDOSAS PARA BAÑOS</h3>
                             <p class="lead mb-5">
-                                Descubre la elegancia y funcionalidad de nuestros portones batientes, diseñados para
-                                brindar seguridad y un toque de sofisticación a cualquier entrada. Estos portones, con
-                                su sistema de apertura hacia adentro o hacia afuera, son perfectos para quienes buscan
-                                una solución práctica y estética para sus hogares o negocios.
+                                Ofrecemos un servicio especializado en instalación de baldosas para baños, ideal para
+                                crear un ambiente elegante, funcional y fácil de limpiar. Nuestras baldosas están
+                                disponibles en una variedad de estilos, colores y texturas, desde cerámicas hasta
+                                porcelánicos, resistentes a la humedad y al desgaste diario.
                             </p>
                             <button onclick="sendMessage(this)"
                                 style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
@@ -305,7 +296,7 @@
             </div>
 
             <div class="col-lg-6 col-md-12 mb-4">
-                <div id="carouselBP" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselBP" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselBP" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -361,11 +352,10 @@
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-title mb-4 product-name">BALDOSAS PARA SALAS</h3>
                             <p class="lead mb-5">
-
-                                Te presentamos nuestros portones plegables, la solución perfecta para espacios que
-                                necesitan optimizar el área sin renunciar a la seguridad y el estilo. Estos portones
-                                están diseñados para ofrecer una apertura ágil y eficiente, ideal para entradas con poco
-                                espacio disponible o donde la rapidez y el ahorro de espacio sean esenciales.
+                                Transforma tu baño con nuestras baldosas de alta calidad, perfectas para cada estilo.
+                                Disponibles en una amplia gama de colores, texturas y diseños, son ideales para crear
+                                espacios modernos, elegantes y funcionales. Resistente al desgaste, fácil de limpiar y
+                                de larga durabilidad. ¡Haz de tu baño un lugar especial!
                             </p>
                             <button onclick="sendMessage(this)"
                                 style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
@@ -386,7 +376,7 @@
                 <h1>PINTURAS</h1>
             </div>
             <div class="col-lg-6 col-md-12 mb-4">
-                <div id="carouselPE" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselPE" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselPE" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -443,10 +433,10 @@
                             style="min-height: 440px;">
                             <h3 class="card-title mb-4 product-name">PINTURAS PARA EXTERIORES</h3>
                             <p class="lead mb-5">
-                                Protege tu hogar con nuestros protectores simples de ventana, la solución esencial para
-                                garantizar la seguridad sin sacrificar el estilo. Diseñados con líneas limpias y un
-                                enfoque en la funcionalidad, estos protectores brindan una barrera sólida contra
-                                intrusiones, permitiendo al mismo tiempo una excelente visibilidad y ventilación.
+                                Dale nueva vida a tus exteriores con nuestras pinturas de alta calidad. Ofrecemos
+                                productos resistentes a la intemperie, que protegen contra el sol, lluvia y humedad.
+                                Disponibles en una amplia gama de colores, brindan un acabado duradero y elegante.
+                                ¡Transforma tu espacio exterior con nuestros productos de confianza!
                             </p>
                             <button onclick="sendMessage(this)"
                                 style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
@@ -458,7 +448,7 @@
             </div>
 
             <div class="col-lg-6 col-md-12 mb-4">
-                <div id="carouselPI" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselPI" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselPI" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -515,10 +505,10 @@
                             style="min-height: 440px;">
                             <h3 class="card-title mb-4 product-name">PINTURAS PARA INTERIORES</h3>
                             <p class="lead mb-5">
-                                Protege tu hogar con nuestros protectores simples de ventana, la solución esencial para
-                                garantizar la seguridad sin sacrificar el estilo. Diseñados con líneas limpias y un
-                                enfoque en la funcionalidad, estos protectores brindan una barrera sólida contra
-                                intrusiones, permitiendo al mismo tiempo una excelente visibilidad y ventilación.
+                                Renueva tus interiores con nuestras pinturas de calidad superior. Con una amplia gama de
+                                colores, ofrecemos acabados perfectos que transforman tus espacios, creando ambientes
+                                frescos, elegantes y acogedores. Nuestros productos son fáciles de aplicar, de secado
+                                rápido y duraderos. ¡Haz de tu hogar un lugar único y vibrante!
                             </p>
                             <button onclick="sendMessage(this)"
                                 style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
@@ -536,9 +526,10 @@
         <div class="container text-center text-md-start">
             <div class="row text-center">
                 <!-- Logo e Información de la Empresa -->
-                <div class="col-md-3 col-lg-3 my-4 d-flex flex-column align-items-center">
-                    <img src="img/jpH.png" class="m-4 mt-5" alt="Logo JP Servicios Generales" style="max-width: 80%;">
-                    <p class="text-center mt-3">Tu aliado estratégico para soluciones en infraestructura, seguridad y
+                <div class="col-md-3 col-lg-3 mb-4 d-flex flex-column align-items-center">
+                    <img src="img/jpH.png" class="footerI m-4" alt="Logo JP Servicios Generales"
+                        style="max-width: 80%;">
+                    <p class="lead text-center">Tu aliado estratégico para soluciones en infraestructura, seguridad y
                         calidad.</p>
                 </div>
 
@@ -546,30 +537,26 @@
                 <div class="col-md-3 col-lg-3 mb-4 d-flex flex-column align-items-center">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Enlaces</h5>
                     <p><a href="#" class="text-white text-decoration-none">Inicio</a></p>
-                    <p><a href="#puerta" class="text-white text-decoration-none">Puertas</a></p>
-                    <p><a href="#porton" class="text-white text-decoration-none">Portones</a></p>
-                    <p><a href="#ventana" class="text-white text-decoration-none">Ventanas</a></p>
-                    <p><a href="#escalera" class="text-white text-decoration-none">Escaleras</a></p>
-                    <p><a href="#techo" class="text-white text-decoration-none">Ventanas</a></p>
-                    <p><a href="#inoxidable" class="text-white text-decoration-none">Inoxidables</a></p>
+                    <p><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></p>
+                    <p><a href="#servicios" class="text-white text-decoration-none">Servicios</a></p>
+                    <p><a href="#equipo" class="text-white text-decoration-none">Equipo</a></p>
                 </div>
 
                 <!-- Información de Contacto -->
                 <div class="col-md-3 col-lg-3 mb-4 d-flex flex-column align-items-center">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contáctanos</h5>
-                    <div class="my-5">
-                        <p><i class="fa-solid fa-location-dot me-2"></i> Lima, Perú</p>
-                        <p><i class="fa-regular fa-envelope me-2"></i> info@jpservicios.com</p>
-                        <p><i class="fas fa-phone me-2"></i> +51 940 132 988</p>
-                        <p><i class="fa-brands fa-whatsapp me-2"></i><a href="https://wa.me/51940132988"
-                                class="text-white text-decoration-none">WhatsApp</a></p>
-                    </div>
+                    <p><i class="fa-solid fa-location-dot me-2"></i> Lima, Perú</p>
+                    <p><i class="fa-regular fa-envelope me-2"></i> info@jpservicios.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +51 940 132 988</p>
+                    <p><i class="fa-brands fa-whatsapp me-2"></i>
+                        <a href="https://wa.me/51940132988" class="text-white text-decoration-none">WhatsApp</a>
+                    </p>
                 </div>
 
                 <!-- Redes Sociales -->
                 <div class="col-md-3 col-lg-3 mb-4 d-flex flex-column align-items-center">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Síguenos</h5>
-                    <div class="mt-5 pt-5">
+                    <div class="mt-5">
                         <a href="https://www.facebook.com/jimmyalexander.phocorodriguez"
                             class="btn btn-outline-light btn-floating m-1"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-twitter"></i></a>
@@ -581,7 +568,8 @@
             <!-- Copyright -->
             <div class="row d-flex justify-content-center mt-4">
                 <div class="col-md-8 col-lg-8">
-                    <p class="text-center text-white">© 2024 JP Servicios Generales. Todos los derechos reservados.</p>
+                    <p class="lead text-center text-white">© 2024 JP Servicios Generales. Todos los derechos reservados.
+                    </p>
                 </div>
             </div>
         </div>
@@ -618,4 +606,5 @@
     </script>
 
 </body>
+
 </html>
